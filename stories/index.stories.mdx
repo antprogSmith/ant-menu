@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../ant-menu.js';
+
+<Meta 
+  title="AntMenu"
+  parameters={{
+    component: "ant-menu",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# AntMenu
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add ant-menu
+```
+
+```js
+import 'ant-menu/ant-menu.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <ant-menu></ant-menu>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="ant-menu" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <ant-menu .title=${'Hello World'}></ant-menu>
+  `}
+</Story>
